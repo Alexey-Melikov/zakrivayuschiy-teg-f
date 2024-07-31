@@ -3,12 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Алексей Меликов" />
+    <meta name="keywords" content="html, css" />
+    <meta property="og:type" content="website" />
+    <meta name="color-scheme" content="dark light" />
+    <link
+      rel="apple-touch-icon"
+      href="<%=require('./src/assets/svg/favicon.svg')%>"
+    />
+    <link rel="icon" href="<%=require('./src/assets/svg/favicon.svg')%>" />
     <title>Закрывающий тег</title>
   </head>
   <body class="page">
     <header class="header">
       <nav class="theme-menu header__theme-menu">
-        <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
             <button type="button" data-theme="dark" class="theme-menu__button">
