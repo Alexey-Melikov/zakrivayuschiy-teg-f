@@ -74,6 +74,8 @@
   line-height: 14px;
   position: relative;
   cursor: pointer;
+  transition: all 0.3s linear;
+  outline: none;
 }
 
 .theme-menu__button:disabled {
@@ -92,7 +94,32 @@
   width: 14px;
   height: 14px;
   top: 1px;
-  left: -10px;
+  left: -14px;
+  animation: arrow 0.5s ease-in-out infinite alternate;
+}
+
+.theme-menu__button::after {
+  content: "";
+  position: absolute;
+
+  left: 5px;
+  bottom: -0.4px;
+
+  width: 90%;
+  height: 1.5px;
+  background-color: currentColor;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.theme-menu__button:focus-visible {
+  opacity: 0.6;
+}
+
+.theme-menu__button:focus-visible::after {
+  transform: scaleX(1);
 }
 
 .main {
@@ -146,21 +173,107 @@
 .card__button-wrapper {
   align-self: flex-end;
   padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 10px;
 }
 
 .like-icon {
-  height: 3px;
-  width: 3px;
+  height: 39px;
+  width: 36px;
 }
+
+.card__icon-button {
+  border: none;
+  background-color: transparent;
+}
+
 .card__like-button {
   border: 2px solid var(--accent-color);
-  padding: 12.5px 37px;
+  background-color: var(--bg-color);
+  width: 130px;
+  height: 38px;
 }
+
 .button__text {
   font-family: var(--acent-font-family);
   font-size: 14px;
   font-weight: var(--main-font-weight);
   line-height: 12.6px;
+  color: var(--accent-color);
+}
+
+.footer {
+  border: 2px solid var(--accent-color);
+  background-color: var(--bg-color);
+  margin: 50px 0 100px;
+  width: 355px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.floppy {
+}
+
+.floppy-dialog {
+  color: var(--accent-color);
+}
+
+.footer__button {
+  border: none;
+  background-color: transparent;
+
+  display: flex;
+  align-items: flex-end;
+
+  height: 21px;
+  padding-left: 8px;
+}
+
+.dialog {
+  display: flex;
+  flex-direction: column;
+  transition: opacity 0.3s ease-in-out;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  background-color: var(--bg-color);
+}
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.3);
+  backdrop-filter: blur(7px);
+}
+
+dialog:not([open]) {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.dialog__mesage-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.dialog__message {
+  font-family: var(--acent-font-family);
+  font-size: 14px;
+  font-weight: var(--main-font-weight);
+  line-height: 21px;
+  max-width: 234px;
+  color: var(--accent-color);
+}
+
+.dialog__close-button {
+  width: 293px;
+  height: 38px;
+  border: 2px solid var(--accent-color);
+  background-color: transparent;
 }
 
 .display__none {
