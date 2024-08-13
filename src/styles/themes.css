@@ -6,8 +6,12 @@
 :root.theme-dark {
   --bg-color: #000;
   --accent-color: #00cc14;
+  --span-aceent-color: #00cc14;
   --font-weight-xl: 785;
   --font-weight-l: 465;
+
+  --like-icon-color: #00cc14;
+  --like-icon-accent-color: #000;
 
   --background-image: repeating-linear-gradient(
       to right,
@@ -21,8 +25,12 @@
 :root.theme-light {
   --bg-color: #fff;
   --accent-color: #000;
+  --span-aceent-color: #fff;
   --font-weight-xl: 700;
   --font-weight-l: 400;
+
+  --like-icon-color: #000;
+  --like-icon-accent-color: #fff;
 
   --background-image: repeating-linear-gradient(
       to right,

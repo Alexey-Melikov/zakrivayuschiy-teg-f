@@ -7,8 +7,13 @@
   /* PAGE */
   --bg-color: #fff;
   --accent-color: #000;
+  --span-aceent-color: #fff;
   --btn-color: #fff;
   --page-max-inline-size: 700px;
+
+  --like-icon-color: #000;
+  --like-icon-accent-color: #fff;
+  --like-icon-sparks-color: #ff0000;
 
   --background-image: repeating-linear-gradient(
       to right,
