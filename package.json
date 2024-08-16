@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/Alexey-Melikov/zakrivayuschiy-teg-f/issues"
   },
-  "homepage": "https://github.com/Alexey-Melikov/zakrivayuschiy-teg-f#readme",
+  "homepage": "https://github.com/Alexey-Melikov/zakrivayuschiy-teg-f",
   "devDependencies": {
     "@babel/core": "^7.24.9",
     "@babel/preset-env": "^7.24.8",
