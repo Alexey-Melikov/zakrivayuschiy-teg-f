@@ -420,7 +420,7 @@ dialog:not([open]) {
   opacity: 0;
 }
 
-/* heart animation =>*/
+/* heart animation => */
 
 .like-icon .contour {
   fill: var(--like-icon-color);
@@ -449,6 +449,8 @@ dialog:not([open]) {
 .like-icon.is-liked .sparks {
   animation: heart-opacity 0.4s ease-in 0.1s 1 alternate;
 }
+
+/* Media */
 
 @media screen and (max-width: 700px) {
   .header,
